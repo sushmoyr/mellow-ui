@@ -1,0 +1,201 @@
+/**
+ * MellowUI IconButton Styles
+ */
+
+.iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.iconButton:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.5);
+}
+
+.iconButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    width: 32px;
+    height: 32px;
+}
+
+.size-md {
+    width: 40px;
+    height: 40px;
+}
+
+.size-lg {
+    width: 48px;
+    height: 48px;
+}
+
+/* ========== Shape ========== */
+
+.rounded {
+    border-radius: 9999px;
+}
+
+.square {
+    border-radius: 12px;
+}
+
+/* ========== Variants × Colors ========== */
+
+/* Solid */
+.variant-solid.color-primary {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+    color: #29293D;
+    box-shadow: 0 2px 8px rgba(179, 153, 255, 0.3);
+}
+
+.variant-solid.color-primary:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(179, 153, 255, 0.4);
+}
+
+.variant-solid.color-secondary {
+    background: linear-gradient(135deg, #FFF3E9 0%, #FFECD9 100%);
+    color: #29293D;
+}
+
+.variant-solid.color-accent {
+    background: linear-gradient(135deg, #FFCFC2 0%, #FFAF99 100%);
+    color: #29293D;
+}
+
+.variant-solid.color-danger {
+    background: linear-gradient(135deg, #FFC2C2 0%, #FF9999 100%);
+    color: #29293D;
+}
+
+/* Soft */
+.variant-soft.color-primary {
+    background: rgba(179, 153, 255, 0.15);
+    color: #815BCC;
+}
+
+.variant-soft.color-primary:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.25);
+}
+
+.variant-soft.color-secondary {
+    background: rgba(255, 217, 179, 0.2);
+    color: #99816B;
+}
+
+.variant-soft.color-accent {
+    background: rgba(255, 175, 153, 0.15);
+    color: #CC8D7A;
+}
+
+.variant-soft.color-danger {
+    background: rgba(255, 153, 153, 0.15);
+    color: #CC7A7A;
+}
+
+/* Outline */
+.variant-outline {
+    background: transparent;
+    border: 2px solid;
+}
+
+.variant-outline.color-primary {
+    border-color: #B399FF;
+    color: #815BCC;
+}
+
+.variant-outline.color-primary:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.1);
+}
+
+.variant-outline.color-secondary {
+    border-color: #FFD9B3;
+    color: #99816B;
+}
+
+.variant-outline.color-accent {
+    border-color: #FFAF99;
+    color: #CC8D7A;
+}
+
+.variant-outline.color-danger {
+    border-color: #FF9999;
+    color: #CC7A7A;
+}
+
+/* Ghost */
+.variant-ghost {
+    background: transparent;
+}
+
+.variant-ghost.color-primary {
+    color: #815BCC;
+}
+
+.variant-ghost.color-primary:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.1);
+}
+
+.variant-ghost.color-secondary {
+    color: #99816B;
+}
+
+.variant-ghost.color-accent {
+    color: #CC8D7A;
+}
+
+.variant-ghost.color-danger {
+    color: #CC7A7A;
+}
+
+/* ========== Icon ========== */
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.size-sm .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.size-lg .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== Loading ========== */
+
+.loading {
+    pointer-events: none;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+}

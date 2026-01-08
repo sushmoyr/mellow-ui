@@ -1,0 +1,112 @@
+/**
+ * MellowUI Checkbox Styles
+ */
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm .checkboxWrapper {
+    width: 16px;
+    height: 16px;
+}
+
+.size-md .checkboxWrapper {
+    width: 20px;
+    height: 20px;
+}
+
+.size-lg .checkboxWrapper {
+    width: 24px;
+    height: 24px;
+}
+
+.size-sm .label {
+    font-size: 14px;
+}
+
+.size-md .label {
+    font-size: 16px;
+}
+
+.size-lg .label {
+    font-size: 18px;
+}
+
+/* ========== Checkbox ========== */
+
+.checkboxWrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input:disabled {
+    cursor: not-allowed;
+}
+
+.checkbox {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFDFB;
+    border: 2px solid #FFECD9;
+    border-radius: 6px;
+
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:checked+.checkbox {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+    border-color: #B399FF;
+}
+
+.input:focus-visible+.checkbox {
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.3);
+}
+
+.error .checkbox {
+    border-color: #FF9999;
+}
+
+.error .input:focus-visible+.checkbox {
+    box-shadow: 0 0 0 3px rgba(255, 153, 153, 0.3);
+}
+
+/* ========== Check Icon ========== */
+
+.checkIcon {
+    width: 70%;
+    height: 70%;
+    stroke: white;
+}
+
+/* ========== Label ========== */
+
+.label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #29293D;
+    line-height: 1.4;
+}

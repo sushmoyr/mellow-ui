@@ -1,0 +1,121 @@
+/**
+ * MellowUI Switch Styles
+ */
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm .track {
+    width: 36px;
+    height: 20px;
+    padding: 2px;
+}
+
+.size-sm .thumb {
+    width: 16px;
+    height: 16px;
+}
+
+.size-md .track {
+    width: 44px;
+    height: 24px;
+    padding: 2px;
+}
+
+.size-md .thumb {
+    width: 20px;
+    height: 20px;
+}
+
+.size-lg .track {
+    width: 52px;
+    height: 28px;
+    padding: 2px;
+}
+
+.size-lg .thumb {
+    width: 24px;
+    height: 24px;
+}
+
+.size-sm .label {
+    font-size: 14px;
+}
+
+.size-md .label {
+    font-size: 16px;
+}
+
+.size-lg .label {
+    font-size: 18px;
+}
+
+/* ========== Switch ========== */
+
+.switchWrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.input:disabled {
+    cursor: not-allowed;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    background: #E5E5E5;
+    border-radius: 9999px;
+
+    transition: background-color 0.2s ease;
+}
+
+.track.checked {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+}
+
+.input:focus-visible+.track {
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.3);
+}
+
+/* ========== Thumb ========== */
+
+.thumb {
+    flex-shrink: 0;
+    background: white;
+    border-radius: 9999px;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== Label ========== */
+
+.label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #29293D;
+    line-height: 1.4;
+}

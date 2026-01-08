@@ -1,0 +1,133 @@
+/**
+ * MellowUI Badge Styles
+ */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+
+    border-radius: 9999px;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    height: 20px;
+    padding: 0 8px;
+    font-size: 11px;
+}
+
+.size-md {
+    height: 24px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+/* ========== Variants × Colors ========== */
+
+/* Primary */
+.variant-solid.color-primary {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-primary {
+    background: rgba(179, 153, 255, 0.15);
+    color: #815BCC;
+}
+
+.variant-outline.color-primary {
+    background: transparent;
+    border: 1px solid #B399FF;
+    color: #815BCC;
+}
+
+/* Secondary */
+.variant-solid.color-secondary {
+    background: linear-gradient(135deg, #FFF3E9 0%, #FFECD9 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-secondary {
+    background: rgba(255, 217, 179, 0.2);
+    color: #99816B;
+}
+
+.variant-outline.color-secondary {
+    background: transparent;
+    border: 1px solid #FFD9B3;
+    color: #99816B;
+}
+
+/* Accent */
+.variant-solid.color-accent {
+    background: linear-gradient(135deg, #FFCFC2 0%, #FFAF99 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-accent {
+    background: rgba(255, 175, 153, 0.15);
+    color: #CC8D7A;
+}
+
+.variant-outline.color-accent {
+    background: transparent;
+    border: 1px solid #FFAF99;
+    color: #CC8D7A;
+}
+
+/* Success */
+.variant-solid.color-success {
+    background: linear-gradient(135deg, #B3E0C2 0%, #99CDAF 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-success {
+    background: rgba(153, 205, 175, 0.15);
+    color: #5A9E73;
+}
+
+.variant-outline.color-success {
+    background: transparent;
+    border: 1px solid #99CDAF;
+    color: #5A9E73;
+}
+
+/* Warning */
+.variant-solid.color-warning {
+    background: linear-gradient(135deg, #FFE0B3 0%, #FFCC80 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-warning {
+    background: rgba(255, 204, 128, 0.2);
+    color: #B38600;
+}
+
+.variant-outline.color-warning {
+    background: transparent;
+    border: 1px solid #FFCC80;
+    color: #B38600;
+}
+
+/* Danger */
+.variant-solid.color-danger {
+    background: linear-gradient(135deg, #FFC2C2 0%, #FF9999 100%);
+    color: #29293D;
+}
+
+.variant-soft.color-danger {
+    background: rgba(255, 153, 153, 0.15);
+    color: #CC7A7A;
+}
+
+.variant-outline.color-danger {
+    background: transparent;
+    border: 1px solid #FF9999;
+    color: #CC7A7A;
+}

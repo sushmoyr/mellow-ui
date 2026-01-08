@@ -37,10 +37,40 @@ function App() {
 
 ## 🧩 Components
 
-### Buttons
-- `Button` — Squishy, delightful buttons with spring physics
+### ✅ Available Components
 
-*More components coming soon...*
+| Component | Description |
+|-----------|-------------|
+| **Button** | Squishy buttons with spring physics, multiple variants |
+| **IconButton** | Circular icon-only button with squishy animation |
+| **Input** | Text input with floating label animation |
+| **Checkbox** | Bouncy checkmark animation |
+| **Switch** | Toggle switch with spring physics |
+| **Card** | Content container with hover lift, subcomponents |
+| **Badge** | Status indicators with multiple colors |
+
+### 🚧 Planned Components
+
+**Buttons & Interactive**
+- ButtonGroup, Toggle, ToggleGroup, FloatingActionButton
+
+**Form Components**
+- InputGroup, InputOTP, Textarea, Radio/RadioGroup, Slider, Select, NativeSelect, Combobox, DatePicker, Calendar, Label, Field, Form
+
+**Layout**
+- Stack, Container, Divider/Separator, AspectRatio, Resizable, ScrollArea, Collapsible, Accordion
+
+**Feedback**
+- Toast/Sonner, Modal/Dialog, AlertDialog, Alert, Tooltip, Progress, Skeleton, Spinner, Empty
+
+**Navigation**
+- Navbar, Tabs, Breadcrumb, NavLink, Pagination, Sidebar, Menubar
+
+**Data Display**
+- Avatar, Typography, Kbd, Table, DataTable, Chart, Carousel
+
+**Overlay & Menus**
+- Popover, HoverCard, DropdownMenu, ContextMenu, Command, Sheet, Drawer
 
 ## 🎨 Design Tokens
 
@@ -103,11 +133,11 @@ import { MellowProvider, createTheme } from '@mellow-ui/react';
 const brandTheme = createTheme({
   name: 'my-brand',
   colors: {
-    primary: '#6366F1',      // Your brand primary color
-    accent: '#EC4899',       // Accent/secondary color
-    success: '#10B981',      // Success states
-    warning: '#F59E0B',      // Warning states
-    error: '#EF4444',        // Error states
+    primary: '#6366F1',
+    accent: '#EC4899',
+    success: '#10B981',
+    warning: '#F59E0B',
+    error: '#EF4444',
     backgroundLight: '#F8FAFC',
     backgroundDark: '#0F172A',
   },
@@ -124,13 +154,10 @@ function App() {
 
 ### Pre-built Themes
 
-MellowUI includes ready-to-use themes:
-
 ```tsx
 import { themes } from '@mellow-ui/react';
 
-// Available themes:
-// themes.mellow  - Default warm, atmospheric (lavender, cream, peach)
+// themes.mellow  - Default warm (lavender, cream, peach)
 // themes.ocean   - Cool blues and cyans
 // themes.forest  - Natural greens
 // themes.sunset  - Warm oranges and pinks
