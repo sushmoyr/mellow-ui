@@ -1,0 +1,146 @@
+/**
+ * MellowUI Global Styles
+ * 
+ * Base styles and CSS custom properties for the design system.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors - Cream (backgrounds) */
+    --mellow-cream-50: #FFFDFB;
+    --mellow-cream-100: #FFF9F4;
+    --mellow-cream-200: #FFF3E9;
+    --mellow-cream-300: #FFECD9;
+    --mellow-cream-400: #FFE4C9;
+    --mellow-cream-500: #FFD9B3;
+
+    /* Colors - Lavender (primary accent) */
+    --mellow-lavender-50: #F8F5FF;
+    --mellow-lavender-100: #F0EBFF;
+    --mellow-lavender-200: #E1D6FF;
+    --mellow-lavender-300: #D1C2FF;
+    --mellow-lavender-400: #C2ADFF;
+    --mellow-lavender-500: #B399FF;
+    --mellow-lavender-600: #9A7AE6;
+    --mellow-lavender-700: #815BCC;
+    --mellow-lavender-800: #683CB3;
+
+    /* Colors - Peach (secondary accent) */
+    --mellow-peach-50: #FFF7F5;
+    --mellow-peach-100: #FFEFEB;
+    --mellow-peach-200: #FFDFD6;
+    --mellow-peach-300: #FFCFC2;
+    --mellow-peach-400: #FFBFAD;
+    --mellow-peach-500: #FFAF99;
+    --mellow-peach-600: #E69E8A;
+    --mellow-peach-700: #CC8D7A;
+
+    /* Colors - Sage (success) */
+    --mellow-sage-50: #F5FAF7;
+    --mellow-sage-100: #EBF5EF;
+    --mellow-sage-200: #D6EBDF;
+    --mellow-sage-300: #C2E1CF;
+    --mellow-sage-400: #ADD7BF;
+    --mellow-sage-500: #99CDAF;
+    --mellow-sage-600: #7AB893;
+    --mellow-sage-700: #5BA377;
+
+    /* Colors - Rose (warning/error) */
+    --mellow-rose-50: #FFF5F5;
+    --mellow-rose-100: #FFEBEB;
+    --mellow-rose-200: #FFD6D6;
+    --mellow-rose-300: #FFC2C2;
+    --mellow-rose-400: #FFADAD;
+    --mellow-rose-500: #FF9999;
+    --mellow-rose-600: #E68A8A;
+    --mellow-rose-700: #CC7A7A;
+
+    /* Colors - Twilight (dark mode base) */
+    --mellow-twilight-50: #F5F5F7;
+    --mellow-twilight-100: #E8E8ED;
+    --mellow-twilight-200: #C9C9D6;
+    --mellow-twilight-300: #AAAABF;
+    --mellow-twilight-400: #8B8BA8;
+    --mellow-twilight-500: #6C6C91;
+    --mellow-twilight-600: #52527A;
+    --mellow-twilight-700: #3D3D5C;
+    --mellow-twilight-800: #29293D;
+    --mellow-twilight-900: #14141F;
+    --mellow-twilight-950: #0A0A10;
+
+    /* Typography */
+    --mellow-font-heading: 'Nunito', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mellow-font-body: 'Inter', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mellow-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+    /* Spacing */
+    --mellow-space-1: 4px;
+    --mellow-space-2: 8px;
+    --mellow-space-3: 12px;
+    --mellow-space-4: 16px;
+    --mellow-space-5: 20px;
+    --mellow-space-6: 24px;
+    --mellow-space-8: 32px;
+    --mellow-space-10: 40px;
+    --mellow-space-12: 48px;
+    --mellow-space-16: 64px;
+
+    /* Border Radius */
+    --mellow-radius-sm: 8px;
+    --mellow-radius-md: 12px;
+    --mellow-radius-lg: 16px;
+    --mellow-radius-xl: 24px;
+    --mellow-radius-full: 9999px;
+
+    /* Shadows */
+    --mellow-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04);
+    --mellow-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.03), 0 4px 8px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.04);
+    --mellow-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.04), 0 16px 32px rgba(0, 0, 0, 0.05);
+
+    /* Focus Ring */
+    --mellow-focus-ring: 0 0 0 3px rgba(179, 153, 255, 0.5);
+
+    /* Semantic - Light Mode */
+    --mellow-bg-primary: var(--mellow-cream-50);
+    --mellow-bg-secondary: var(--mellow-cream-100);
+    --mellow-text-primary: var(--mellow-twilight-800);
+    --mellow-text-secondary: var(--mellow-twilight-600);
+    --mellow-text-muted: var(--mellow-twilight-400);
+    --mellow-border: var(--mellow-cream-300);
+    --mellow-accent: var(--mellow-lavender-500);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --mellow-bg-primary: var(--mellow-twilight-900);
+    --mellow-bg-secondary: var(--mellow-twilight-800);
+    --mellow-text-primary: var(--mellow-cream-50);
+    --mellow-text-secondary: var(--mellow-cream-200);
+    --mellow-text-muted: var(--mellow-twilight-400);
+    --mellow-border: var(--mellow-twilight-600);
+    --mellow-accent: var(--mellow-lavender-400);
+
+    --mellow-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.12);
+    --mellow-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.14);
+    --mellow-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.14), 0 16px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Base reset for MellowUI components */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
