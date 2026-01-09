@@ -1,0 +1,182 @@
+/**
+ * MellowUI Tag Styles
+ */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 9999px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    padding: 2px 8px;
+    font-size: 11px;
+}
+
+.size-md {
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.size-lg {
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+/* ========== Subtle Variant ========== */
+
+.variant-subtle.color-primary {
+    background: rgba(179, 153, 255, 0.2);
+    color: #5C3D99;
+}
+
+.variant-subtle.color-secondary {
+    background: rgba(255, 217, 179, 0.3);
+    color: #8B6914;
+}
+
+.variant-subtle.color-accent {
+    background: rgba(255, 175, 153, 0.25);
+    color: #A04D2E;
+}
+
+.variant-subtle.color-gray {
+    background: rgba(107, 90, 71, 0.1);
+    color: #6B5A47;
+}
+
+.variant-subtle.color-success {
+    background: rgba(76, 175, 80, 0.15);
+    color: #2E7D32;
+}
+
+.variant-subtle.color-warning {
+    background: rgba(255, 193, 7, 0.2);
+    color: #F57C00;
+}
+
+.variant-subtle.color-error {
+    background: rgba(244, 67, 54, 0.15);
+    color: #C62828;
+}
+
+/* ========== Solid Variant ========== */
+
+.variant-solid.color-primary {
+    background: #B399FF;
+    color: white;
+}
+
+.variant-solid.color-secondary {
+    background: #FFD9B3;
+    color: #5C3D99;
+}
+
+.variant-solid.color-accent {
+    background: #FFAF99;
+    color: white;
+}
+
+.variant-solid.color-gray {
+    background: #9E9E9E;
+    color: white;
+}
+
+.variant-solid.color-success {
+    background: #4CAF50;
+    color: white;
+}
+
+.variant-solid.color-warning {
+    background: #FF9800;
+    color: white;
+}
+
+.variant-solid.color-error {
+    background: #F44336;
+    color: white;
+}
+
+/* ========== Outline Variant ========== */
+
+.variant-outline.color-primary {
+    border: 1px solid #B399FF;
+    color: #5C3D99;
+    background: transparent;
+}
+
+.variant-outline.color-secondary {
+    border: 1px solid #FFD9B3;
+    color: #8B6914;
+    background: transparent;
+}
+
+.variant-outline.color-accent {
+    border: 1px solid #FFAF99;
+    color: #A04D2E;
+    background: transparent;
+}
+
+.variant-outline.color-gray {
+    border: 1px solid rgba(107, 90, 71, 0.3);
+    color: #6B5A47;
+    background: transparent;
+}
+
+.variant-outline.color-success {
+    border: 1px solid #4CAF50;
+    color: #2E7D32;
+    background: transparent;
+}
+
+.variant-outline.color-warning {
+    border: 1px solid #FF9800;
+    color: #F57C00;
+    background: transparent;
+}
+
+.variant-outline.color-error {
+    border: 1px solid #F44336;
+    color: #C62828;
+    background: transparent;
+}
+
+/* ========== Icon ========== */
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+/* ========== Label ========== */
+
+.label {
+    white-space: nowrap;
+}
+
+/* ========== Remove Button ========== */
+
+.remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 2px;
+    border: none;
+    background: transparent;
+    color: currentColor;
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: opacity 0.15s ease;
+}
+
+.remove:hover {
+    opacity: 1;
+}

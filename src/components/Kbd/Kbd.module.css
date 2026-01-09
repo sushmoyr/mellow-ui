@@ -1,0 +1,40 @@
+/**
+ * MellowUI Kbd Styles
+ */
+
+.kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, #FFFDFB 0%, #F5F0EB 100%);
+    border: 1px solid rgba(107, 90, 71, 0.2);
+    border-bottom-width: 2px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-weight: 500;
+    color: #29293D;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    padding: 2px 5px;
+    font-size: 11px;
+    min-width: 18px;
+    border-radius: 4px;
+}
+
+.size-md {
+    padding: 3px 6px;
+    font-size: 12px;
+    min-width: 22px;
+}
+
+.size-lg {
+    padding: 4px 8px;
+    font-size: 14px;
+    min-width: 28px;
+}

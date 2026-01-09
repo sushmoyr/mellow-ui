@@ -1,0 +1,78 @@
+/**
+ * MellowUI Table Styles
+ */
+
+.wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(107, 90, 71, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    color: #29293D;
+}
+
+/* ========== Head ========== */
+
+.thead {
+    background: rgba(179, 153, 255, 0.08);
+}
+
+.th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: #5C3D99;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(107, 90, 71, 0.1);
+}
+
+/* ========== Body ========== */
+
+.tbody {
+    background: #FFFDFB;
+}
+
+.tr {
+    transition: background-color 0.15s ease;
+}
+
+.td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(107, 90, 71, 0.08);
+}
+
+.tbody .tr:last-child .td {
+    border-bottom: none;
+}
+
+/* ========== Variants ========== */
+
+.striped .tbody .tr:nth-child(even) {
+    background: rgba(179, 153, 255, 0.04);
+}
+
+.hoverable .tbody .tr:hover {
+    background: rgba(179, 153, 255, 0.08);
+}
+
+.selected {
+    background: rgba(179, 153, 255, 0.15) !important;
+}
+
+/* ========== Compact ========== */
+
+.compact .th {
+    padding: 8px 12px;
+}
+
+.compact .td {
+    padding: 8px 12px;
+}
