@@ -1,0 +1,130 @@
+/**
+ * MellowUI ToggleGroup Styles
+ */
+
+.toggleGroup {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 1px;
+    background: rgba(179, 153, 255, 0.12);
+    /* Subtle lavender - harmonizes with pressed state */
+    border-radius: 12px;
+    padding: 2px;
+}
+
+/* ========== Item Base ========== */
+
+.item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    background: transparent;
+    color: #6B5A47;
+
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.item:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(179, 153, 255, 0.5);
+    z-index: 1;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    min-width: 28px;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.size-md {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.size-lg {
+    min-width: 44px;
+    height: 44px;
+    padding: 0 18px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/* ========== Default Variant ========== */
+
+.variant-default:hover:not(:disabled):not(.pressed) {
+    background: rgba(179, 153, 255, 0.12);
+    color: #5C3D99;
+}
+
+.variant-default.pressed {
+    background: rgba(179, 153, 255, 0.25);
+    /* Lavender tint - consistent with Toggle */
+    color: #5C3D99;
+}
+
+/* ========== Outline Variant ========== */
+
+.variant-outline {
+    border: 1px solid transparent;
+}
+
+.variant-outline:hover:not(:disabled):not(.pressed) {
+    background: rgba(179, 153, 255, 0.1);
+    border-color: rgba(179, 153, 255, 0.3);
+    color: #5C3D99;
+}
+
+.variant-outline.pressed {
+    background: rgba(179, 153, 255, 0.15);
+    border-color: #B399FF;
+    color: #5C3D99;
+}
+
+/* ========== Disabled ========== */
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Content ========== */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.content svg {
+    width: 18px;
+    height: 18px;
+}
+
+.size-sm .content svg {
+    width: 14px;
+    height: 14px;
+}
+
+.size-lg .content svg {
+    width: 20px;
+    height: 20px;
+}

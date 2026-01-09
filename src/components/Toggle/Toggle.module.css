@@ -1,0 +1,127 @@
+/**
+ * MellowUI Toggle Styles
+ * 
+ * Pressed/unpressed button states with WCAG AA compliant colors.
+ */
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    background: transparent;
+    color: #6B5A47;
+
+    transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.toggle:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.5);
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.size-md {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.size-lg {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+}
+
+/* ========== Default Variant ========== */
+
+.variant-default {
+    background: rgba(107, 90, 71, 0.08);
+    color: #6B5A47;
+}
+
+.variant-default:hover:not(:disabled):not(.pressed) {
+    background: rgba(179, 153, 255, 0.15);
+    color: #5C3D99;
+}
+
+.variant-default.pressed {
+    background: rgba(179, 153, 255, 0.25);
+    color: #5C3D99;
+}
+
+.variant-default.pressed:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.35);
+}
+
+/* ========== Outline Variant ========== */
+
+.variant-outline {
+    background: transparent;
+    border: 2px solid rgba(107, 90, 71, 0.2);
+    color: #6B5A47;
+}
+
+.variant-outline:hover:not(:disabled):not(.pressed) {
+    border-color: #B399FF;
+    color: #5C3D99;
+}
+
+.variant-outline.pressed {
+    background: rgba(179, 153, 255, 0.2);
+    border-color: #B399FF;
+    color: #5C3D99;
+}
+
+.variant-outline.pressed:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.3);
+}
+
+/* ========== Disabled ========== */
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Content ========== */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.size-sm .content {
+    width: 16px;
+    height: 16px;
+}
+
+.size-lg .content {
+    width: 24px;
+    height: 24px;
+}
+
+.content svg {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,115 @@
+/**
+ * MellowUI DateRangePicker Styles
+ */
+
+.container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6B5A47;
+    margin-bottom: 6px;
+}
+
+/* ========== Trigger ========== */
+
+.trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-width: 240px;
+    padding: 10px 12px;
+
+    background: #FFFDFB;
+    border: 2px solid rgba(107, 90, 71, 0.15);
+    border-radius: 12px;
+    cursor: pointer;
+
+    font-family: inherit;
+    text-align: left;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trigger:hover:not(.disabled) {
+    border-color: rgba(179, 153, 255, 0.4);
+}
+
+.trigger:focus {
+    outline: none;
+    border-color: #B399FF;
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.2);
+}
+
+.trigger.open {
+    border-color: #B399FF;
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.2);
+}
+
+.trigger.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.size-md {
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.size-lg {
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+/* ========== Content ========== */
+
+.icon {
+    flex-shrink: 0;
+}
+
+.value {
+    flex: 1;
+    color: #29293D;
+}
+
+.placeholder {
+    color: #9E9E9E;
+}
+
+.chevron {
+    flex-shrink: 0;
+    color: #6B5A47;
+    font-size: 12px;
+}
+
+/* ========== Popup ========== */
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    z-index: 1000;
+}
+
+.hint {
+    padding: 8px 16px;
+    background: rgba(179, 153, 255, 0.1);
+    border-radius: 16px 16px 0 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #5C3D99;
+    text-align: center;
+}
