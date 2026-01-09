@@ -1,0 +1,148 @@
+/**
+ * MellowUI Radio Styles
+ */
+
+.radioGroup {
+    display: flex;
+    gap: 12px;
+}
+
+.radioGroup.vertical {
+    flex-direction: column;
+}
+
+.radioGroup.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* ========== Radio ========== */
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Hidden Input ========== */
+
+.input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.input:focus-visible+.circle {
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.3);
+}
+
+/* ========== Circle ========== */
+
+.circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    border: 2px solid rgba(107, 90, 71, 0.3);
+    background: #FFFDFB;
+
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+/* ========== Circle Sizes ========== */
+
+.size-sm .circle {
+    width: 16px;
+    height: 16px;
+}
+
+.size-md .circle {
+    width: 20px;
+    height: 20px;
+}
+
+.size-lg .circle {
+    width: 24px;
+    height: 24px;
+}
+
+/* ========== Dot ========== */
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.size-sm .dot {
+    width: 8px;
+    height: 8px;
+}
+
+.size-md .dot {
+    width: 10px;
+    height: 10px;
+}
+
+.size-lg .dot {
+    width: 12px;
+    height: 12px;
+}
+
+/* ========== Color Variants ========== */
+
+/* Primary (Lavender) */
+.color-primary.checked .circle {
+    border-color: #B399FF;
+}
+
+.color-primary .dot {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+}
+
+/* Secondary (Cream) */
+.color-secondary.checked .circle {
+    border-color: #FFD9B3;
+}
+
+.color-secondary .dot {
+    background: linear-gradient(135deg, #FFF3E9 0%, #FFD9B3 100%);
+}
+
+/* Accent (Peach) */
+.color-accent.checked .circle {
+    border-color: #FFAF99;
+}
+
+.color-accent .dot {
+    background: linear-gradient(135deg, #FFCFC2 0%, #FFAF99 100%);
+}
+
+/* ========== Label ========== */
+
+.label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #29293D;
+}
+
+.size-sm .label {
+    font-size: 14px;
+}
+
+.size-md .label {
+    font-size: 16px;
+}
+
+.size-lg .label {
+    font-size: 18px;
+}
