@@ -1,0 +1,116 @@
+/**
+ * MellowUI Progress Styles
+ */
+
+/* ========== Bar ========== */
+
+.bar {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(107, 90, 71, 0.1);
+    border-radius: 9999px;
+}
+
+.size-sm.bar {
+    height: 4px;
+}
+
+.size-md.bar {
+    height: 8px;
+}
+
+.size-lg.bar {
+    height: 12px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 9999px;
+}
+
+.color-primary .fill {
+    background: linear-gradient(90deg, #C2ADFF 0%, #B399FF 100%);
+}
+
+.color-secondary .fill {
+    background: linear-gradient(90deg, #FFF3E9 0%, #FFD9B3 100%);
+}
+
+.color-accent .fill {
+    background: linear-gradient(90deg, #FFCFC2 0%, #FFAF99 100%);
+}
+
+/* Indeterminate animation */
+.indeterminate .fill {
+    width: 40% !important;
+    animation: indeterminate 1.5s ease-in-out infinite;
+}
+
+@keyframes indeterminate {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(350%);
+    }
+}
+
+.label {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #5C3D99;
+}
+
+/* ========== Circular ========== */
+
+.circular {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleTrack {
+    stroke: rgba(107, 90, 71, 0.1);
+}
+
+.color-primary .circleFill {
+    stroke: #B399FF;
+}
+
+.color-secondary .circleFill {
+    stroke: #FFD9B3;
+}
+
+.color-accent .circleFill {
+    stroke: #FFAF99;
+}
+
+.indeterminateCircular svg {
+    animation: spin 1.5s linear infinite;
+}
+
+.indeterminateCircular .circleFill {
+    stroke-dashoffset: 75% !important;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circularLabel {
+    position: absolute;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #5C3D99;
+}

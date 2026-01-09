@@ -1,0 +1,89 @@
+/**
+ * MellowUI Tooltip Styles
+ */
+
+.wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1000;
+    padding: 6px 10px;
+
+    background: rgba(41, 41, 61, 0.95);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFDFB;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* ========== Positions ========== */
+
+.top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+}
+
+.bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+}
+
+.left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 8px;
+}
+
+.right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+/* ========== Arrow ========== */
+
+.arrow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(41, 41, 61, 0.95);
+    transform: rotate(45deg);
+}
+
+.top .arrow {
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.bottom .arrow {
+    top: -4px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.left .arrow {
+    right: -4px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.right .arrow {
+    left: -4px;
+    top: 50%;
+    margin-top: -4px;
+}
