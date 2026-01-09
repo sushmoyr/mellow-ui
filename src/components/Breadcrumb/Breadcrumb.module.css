@@ -1,0 +1,47 @@
+/**
+ * MellowUI Breadcrumb Styles
+ */
+
+.breadcrumb {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    color: rgba(107, 90, 71, 0.4);
+    font-size: 13px;
+}
+
+.link {
+    color: #6B5A47;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a.link:hover {
+    color: #5C3D99;
+    text-decoration: underline;
+}
+
+.current {
+    color: #29293D;
+    font-weight: 500;
+}

@@ -1,0 +1,65 @@
+/**
+ * MellowUI Link Styles
+ */
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.link:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* ========== Underline on Hover ========== */
+
+.underlineOnHover {
+    text-decoration: none;
+}
+
+.underlineOnHover:hover {
+    text-decoration: underline;
+}
+
+/* ========== Variants ========== */
+
+.variant-default {
+    color: #5C3D99;
+}
+
+.variant-default:hover {
+    color: #4A3080;
+}
+
+.variant-subtle {
+    color: #6B5A47;
+    text-decoration-color: rgba(107, 90, 71, 0.3);
+}
+
+.variant-subtle:hover {
+    color: #29293D;
+    text-decoration-color: currentColor;
+}
+
+.variant-accent {
+    color: #D97D4A;
+}
+
+.variant-accent:hover {
+    color: #C06A38;
+}
+
+/* ========== External Icon ========== */
+
+.externalIcon {
+    font-size: 0.85em;
+    opacity: 0.7;
+}

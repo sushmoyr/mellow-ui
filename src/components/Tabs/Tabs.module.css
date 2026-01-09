@@ -1,0 +1,133 @@
+/**
+ * MellowUI Tabs Styles
+ */
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ========== Tab List ========== */
+
+.tabList {
+    position: relative;
+    display: flex;
+    gap: 4px;
+}
+
+.variant-line .tabList {
+    border-bottom: 2px solid rgba(107, 90, 71, 0.1);
+}
+
+.variant-pills .tabList {
+    background: rgba(179, 153, 255, 0.1);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.variant-enclosed .tabList {
+    background: rgba(107, 90, 71, 0.05);
+    border-radius: 12px 12px 0 0;
+    padding: 4px 4px 0;
+}
+
+/* ========== Tab ========== */
+
+.tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    color: #6B5A47;
+
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.tab:hover:not(.disabled) {
+    color: #29293D;
+}
+
+.tab.selected {
+    color: #5C3D99;
+}
+
+.tab.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm .tab {
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.size-md .tab {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.size-lg .tab {
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+/* ========== Line Variant ========== */
+
+.variant-line .tab {
+    margin-bottom: -2px;
+    border-radius: 4px 4px 0 0;
+}
+
+.variant-line .indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #B399FF 0%, #C2ADFF 100%);
+    border-radius: 2px 2px 0 0;
+}
+
+/* ========== Pills Variant ========== */
+
+.variant-pills .tab {
+    border-radius: 8px;
+}
+
+.variant-pills .tab.selected {
+    background: #FFFDFB;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== Enclosed Variant ========== */
+
+.variant-enclosed .tab {
+    border-radius: 8px 8px 0 0;
+}
+
+.variant-enclosed .tab.selected {
+    background: #FFFDFB;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Tab Panel ========== */
+
+.tabPanel {
+    padding: 16px 0;
+}
+
+.variant-enclosed .tabPanel {
+    background: #FFFDFB;
+    padding: 16px;
+    border-radius: 0 0 12px 12px;
+}

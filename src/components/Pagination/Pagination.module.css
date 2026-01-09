@@ -1,0 +1,92 @@
+/**
+ * MellowUI Pagination Styles
+ */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #6B5A47;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.button:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.1);
+    color: #5C3D99;
+}
+
+.button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.button.active {
+    color: #5C3D99;
+    font-weight: 600;
+}
+
+.activeIndicator {
+    position: absolute;
+    inset: 0;
+    background: rgba(179, 153, 255, 0.15);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.arrow {
+    font-size: 1.2em;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(107, 90, 71, 0.4);
+}
+
+/* ========== Sizes ========== */
+
+.size-sm .button {
+    min-width: 28px;
+    height: 28px;
+    font-size: 12px;
+}
+
+.size-sm .dots {
+    width: 24px;
+}
+
+.size-md .button {
+    min-width: 36px;
+    height: 36px;
+    font-size: 14px;
+}
+
+.size-md .dots {
+    width: 28px;
+}
+
+.size-lg .button {
+    min-width: 44px;
+    height: 44px;
+    font-size: 16px;
+}
+
+.size-lg .dots {
+    width: 32px;
+}
