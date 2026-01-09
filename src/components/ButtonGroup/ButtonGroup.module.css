@@ -1,0 +1,88 @@
+/**
+ * MellowUI ButtonGroup Styles
+ * 
+ * Connected button styling with proper border-radius handling.
+ */
+
+.buttonGroup {
+    display: inline-flex;
+    align-items: stretch;
+}
+
+/* ========== Orientation ========== */
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+/* ========== Attached Mode ========== */
+
+.attached.horizontal > .groupedButton {
+    /* Remove gap between attached buttons */
+    margin-left: -2px;
+}
+
+.attached.horizontal > .groupedButton:first-child {
+    margin-left: 0;
+}
+
+.attached.vertical > .groupedButton {
+    margin-top: -2px;
+}
+
+.attached.vertical > .groupedButton:first-child {
+    margin-top: 0;
+}
+
+/* Ensure proper stacking for hover/focus */
+.attached > .groupedButton {
+    position: relative;
+}
+
+.attached > .groupedButton:hover,
+.attached > .groupedButton:focus-visible {
+    z-index: 1;
+}
+
+/* ========== Horizontal Border Radius ========== */
+
+.groupedButton.first:not(.vertical) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.groupedButton.last:not(.vertical) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.groupedButton.middle:not(.vertical) {
+    border-radius: 0 !important;
+}
+
+/* ========== Vertical Border Radius ========== */
+
+.groupedButton.first.vertical {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.groupedButton.last.vertical {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.groupedButton.middle.vertical {
+    border-radius: 0 !important;
+}
+
+/* ========== Focus Ring Adjustment ========== */
+
+/* Adjust focus ring to not overlap siblings */
+.attached > .groupedButton:focus-visible {
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.5);
+}

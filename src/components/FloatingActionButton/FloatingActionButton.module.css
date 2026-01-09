@@ -1,0 +1,184 @@
+/**
+ * MellowUI FloatingActionButton Styles
+ */
+
+.fab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    transition: box-shadow 0.2s ease;
+}
+
+.fab:focus-visible {
+    outline: none;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        0 0 0 3px rgba(179, 153, 255, 0.5);
+}
+
+/* ========== Sizes ========== */
+
+.size-sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.size-md {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+}
+
+.size-lg {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+}
+
+/* Extended sizes (with label) */
+.extended.size-sm {
+    width: auto;
+    padding: 0 16px;
+    border-radius: 20px;
+}
+
+.extended.size-md {
+    width: auto;
+    padding: 0 20px;
+    border-radius: 28px;
+}
+
+.extended.size-lg {
+    width: auto;
+    padding: 0 24px;
+    border-radius: 36px;
+}
+
+/* ========== Colors ========== */
+
+.color-primary {
+    background: linear-gradient(135deg, #C2ADFF 0%, #B399FF 100%);
+    color: #29293D;
+    box-shadow:
+        0 4px 12px rgba(179, 153, 255, 0.3),
+        0 8px 24px rgba(179, 153, 255, 0.2);
+}
+
+.color-primary:hover:not(:disabled) {
+    box-shadow:
+        0 6px 16px rgba(179, 153, 255, 0.4),
+        0 12px 32px rgba(179, 153, 255, 0.25);
+}
+
+.color-secondary {
+    background: linear-gradient(135deg, #FFF3E9 0%, #FFECD9 100%);
+    color: #29293D;
+    box-shadow:
+        0 4px 12px rgba(255, 217, 179, 0.3),
+        0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.color-secondary:hover:not(:disabled) {
+    box-shadow:
+        0 6px 16px rgba(255, 217, 179, 0.4),
+        0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.color-accent {
+    background: linear-gradient(135deg, #FFCFC2 0%, #FFAF99 100%);
+    color: #29293D;
+    box-shadow:
+        0 4px 12px rgba(255, 175, 153, 0.3),
+        0 8px 24px rgba(255, 175, 153, 0.2);
+}
+
+.color-accent:hover:not(:disabled) {
+    box-shadow:
+        0 6px 16px rgba(255, 175, 153, 0.4),
+        0 12px 32px rgba(255, 175, 153, 0.25);
+}
+
+/* ========== Disabled ========== */
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* ========== Fixed Positioning ========== */
+
+.fixed {
+    position: fixed;
+    z-index: 1000;
+}
+
+.bottom-right {
+    bottom: 24px;
+    right: 24px;
+}
+
+.bottom-left {
+    bottom: 24px;
+    left: 24px;
+}
+
+.bottom-center {
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ========== Icon & Label ========== */
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.size-sm .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.size-md .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.size-lg .icon {
+    width: 28px;
+    height: 28px;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.size-sm .label {
+    font-size: 13px;
+}
+
+.size-lg .label {
+    font-size: 16px;
+}
