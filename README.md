@@ -37,7 +37,7 @@ function App() {
 
 ## 🧩 Components
 
-MellowUI includes **35+ components** organized into categories:
+MellowUI includes **45+ components** organized into categories:
 
 ### Buttons & Interactive
 
@@ -61,6 +61,15 @@ MellowUI includes **35+ components** organized into categories:
 | **Radio / RadioGroup** | Radio buttons with bouncy dot |
 | **Slider** | Range input with squishy thumb |
 | **Select** | Dropdown with animated options |
+
+### Date & Time
+
+| Component | Description |
+|-----------|-------------|
+| **Calendar** | Month display with smooth slide animations |
+| **DatePicker** | Input with popup calendar |
+| **DateRangePicker** | Two-date selection with range highlighting |
+| **TimePicker** | Spinning wheel selector with drag/scroll |
 
 ### Layout
 
@@ -103,12 +112,22 @@ MellowUI includes **35+ components** organized into categories:
 | **Tag** | Colored labels/chips |
 | **Kbd** | Keyboard shortcut display |
 
-### 🚧 Planned
+### Disclosure
 
-- Modal/Dialog, Drawer, Popover
-- DropdownMenu, ContextMenu
-- DatePicker, Calendar
-- Accordion, Collapsible
+| Component | Description |
+|-----------|-------------|
+| **Collapsible** | Animated expand/collapse |
+| **Accordion** | Single/multiple mode with nested context |
+
+### Overlay
+
+| Component | Description |
+|-----------|-------------|
+| **Modal** | Dialog with backdrop blur, spring bounce |
+| **Drawer** | Slide-out panel from any edge |
+| **Popover** | Floating content with arrow |
+| **DropdownMenu** | Action menu with icons & shortcuts |
+| **ContextMenu** | Right-click triggered menu |
 
 ## 🎨 Design Tokens
 
