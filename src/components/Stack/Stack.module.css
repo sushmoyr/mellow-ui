@@ -1,0 +1,9 @@
+/**
+ * MellowUI Stack Styles
+ * 
+ * Base styles only - most styling is inline for flexibility.
+ */
+
+.stack {
+    box-sizing: border-box;
+}

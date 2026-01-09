@@ -1,0 +1,8 @@
+.grid {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gridItem {
+    box-sizing: border-box;
+}
