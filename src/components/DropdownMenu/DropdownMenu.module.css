@@ -1,0 +1,121 @@
+/**
+ * MellowUI DropdownMenu Styles
+ */
+
+.container {
+    position: relative;
+    display: inline-flex;
+}
+
+/* ========== Menu ========== */
+
+.menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+
+    min-width: 180px;
+    padding: 6px;
+    margin-top: 6px;
+
+    background: #FFFDFB;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(179, 153, 255, 0.08),
+        0 0 0 1px rgba(107, 90, 71, 0.08);
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ========== Alignment ========== */
+
+.align-start {
+    left: 0;
+}
+
+.align-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.align-end {
+    right: 0;
+}
+
+/* ========== Item ========== */
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+
+    background: transparent;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 13px;
+    color: #29293D;
+    text-align: left;
+}
+
+.item:focus {
+    outline: none;
+    background: rgba(179, 153, 255, 0.1);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.label {
+    flex: 1;
+    font-weight: 500;
+}
+
+.shortcut {
+    font-size: 11px;
+    color: #9E9E9E;
+    font-weight: 500;
+}
+
+/* ========== States ========== */
+
+.destructive {
+    color: #C62828;
+}
+
+.destructive:hover {
+    background: rgba(244, 67, 54, 0.08) !important;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ========== Separator ========== */
+
+.separator {
+    height: 1px;
+    margin: 6px 8px;
+    background: rgba(107, 90, 71, 0.1);
+}
+
+/* ========== Label ========== */
+
+.menuLabel {
+    padding: 8px 12px 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6B5A47;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

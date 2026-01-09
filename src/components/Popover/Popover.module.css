@@ -1,0 +1,122 @@
+/**
+ * MellowUI Popover Styles
+ */
+
+.container {
+    position: relative;
+    display: inline-flex;
+}
+
+/* ========== Content ========== */
+
+.content {
+    position: absolute;
+    z-index: 1000;
+
+    min-width: 180px;
+    padding: 12px;
+
+    background: #FFFDFB;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(179, 153, 255, 0.1),
+        0 0 0 1px rgba(107, 90, 71, 0.08);
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ========== Positions ========== */
+
+.position-top {
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+
+.position-bottom {
+    top: 100%;
+    margin-top: 10px;
+}
+
+.position-left {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.position-right {
+    left: 100%;
+    margin-left: 10px;
+}
+
+/* ========== Alignment ========== */
+
+.position-top.align-start,
+.position-bottom.align-start {
+    left: 0;
+}
+
+.position-top.align-center,
+.position-bottom.align-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position-top.align-end,
+.position-bottom.align-end {
+    right: 0;
+}
+
+.position-left.align-start,
+.position-right.align-start {
+    top: 0;
+}
+
+.position-left.align-center,
+.position-right.align-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.position-left.align-end,
+.position-right.align-end {
+    bottom: 0;
+}
+
+/* ========== Arrow ========== */
+
+.arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFFDFB;
+    border-radius: 2px;
+    box-shadow: -1px -1px 0 rgba(107, 90, 71, 0.08);
+    transform: rotate(45deg);
+}
+
+.position-bottom .arrow {
+    top: -6px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.position-top .arrow {
+    bottom: -6px;
+    left: 50%;
+    margin-left: -6px;
+    box-shadow: 1px 1px 0 rgba(107, 90, 71, 0.08);
+}
+
+.position-left .arrow {
+    right: -6px;
+    top: 50%;
+    margin-top: -6px;
+    box-shadow: 1px -1px 0 rgba(107, 90, 71, 0.08);
+}
+
+.position-right .arrow {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    box-shadow: -1px 1px 0 rgba(107, 90, 71, 0.08);
+}

@@ -1,0 +1,175 @@
+/**
+ * MellowUI Drawer Styles
+ */
+
+.portal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+}
+
+/* ========== Backdrop ========== */
+
+.backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(41, 41, 61, 0.35);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* ========== Drawer Panel ========== */
+
+.drawer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFDFB;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ========== Positions ========== */
+
+.position-left {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.position-right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.position-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.position-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+/* ========== Sizes (horizontal) ========== */
+
+.position-left.size-sm,
+.position-right.size-sm {
+    width: 280px;
+}
+
+.position-left.size-md,
+.position-right.size-md {
+    width: 380px;
+}
+
+.position-left.size-lg,
+.position-right.size-lg {
+    width: 500px;
+}
+
+.position-left.size-xl,
+.position-right.size-xl {
+    width: 640px;
+}
+
+.position-left.size-full,
+.position-right.size-full {
+    width: 100%;
+}
+
+/* ========== Sizes (vertical) ========== */
+
+.position-top.size-sm,
+.position-bottom.size-sm {
+    height: 200px;
+}
+
+.position-top.size-md,
+.position-bottom.size-md {
+    height: 320px;
+}
+
+.position-top.size-lg,
+.position-bottom.size-lg {
+    height: 450px;
+}
+
+.position-top.size-xl,
+.position-bottom.size-xl {
+    height: 600px;
+}
+
+.position-top.size-full,
+.position-bottom.size-full {
+    height: 100%;
+}
+
+/* ========== Header ========== */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(107, 90, 71, 0.1);
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #29293D;
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-left: auto;
+
+    background: rgba(107, 90, 71, 0.08);
+    border: none;
+    border-radius: 8px;
+    color: #6B5A47;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.closeButton:hover {
+    background: rgba(244, 67, 54, 0.1);
+    color: #C62828;
+}
+
+/* ========== Content ========== */
+
+.content {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    color: #29293D;
+}
+
+/* ========== Footer ========== */
+
+.footer {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    background: rgba(179, 153, 255, 0.04);
+    border-top: 1px solid rgba(107, 90, 71, 0.08);
+}
