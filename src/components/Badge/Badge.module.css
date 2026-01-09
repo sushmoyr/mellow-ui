@@ -38,13 +38,15 @@
 
 .variant-soft.color-primary {
     background: rgba(179, 153, 255, 0.15);
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-primary {
     background: transparent;
     border: 1px solid #B399FF;
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
 }
 
 /* Secondary */
@@ -55,13 +57,15 @@
 
 .variant-soft.color-secondary {
     background: rgba(255, 217, 179, 0.2);
-    color: #99816B;
+    color: #6B5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-secondary {
     background: transparent;
     border: 1px solid #FFD9B3;
-    color: #99816B;
+    color: #6B5A47;
+    /* WCAG AA compliant */
 }
 
 /* Accent */
@@ -72,13 +76,15 @@
 
 .variant-soft.color-accent {
     background: rgba(255, 175, 153, 0.15);
-    color: #CC8D7A;
+    color: #8F5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-accent {
     background: transparent;
     border: 1px solid #FFAF99;
-    color: #CC8D7A;
+    color: #8F5A47;
+    /* WCAG AA compliant */
 }
 
 /* Success */
@@ -89,13 +95,15 @@
 
 .variant-soft.color-success {
     background: rgba(153, 205, 175, 0.15);
-    color: #5A9E73;
+    color: #2D6E47;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-success {
     background: transparent;
     border: 1px solid #99CDAF;
-    color: #5A9E73;
+    color: #2D6E47;
+    /* WCAG AA compliant */
 }
 
 /* Warning */
@@ -106,13 +114,15 @@
 
 .variant-soft.color-warning {
     background: rgba(255, 204, 128, 0.2);
-    color: #B38600;
+    color: #8F6800;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-warning {
     background: transparent;
     border: 1px solid #FFCC80;
-    color: #B38600;
+    color: #8F6800;
+    /* WCAG AA compliant */
 }
 
 /* Danger */
@@ -123,11 +133,13 @@
 
 .variant-soft.color-danger {
     background: rgba(255, 153, 153, 0.15);
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-danger {
     background: transparent;
     border: 1px solid #FF9999;
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }

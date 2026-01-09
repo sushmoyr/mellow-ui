@@ -19,13 +19,15 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 12px;
     font-weight: 500;
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
     padding-left: 4px;
     height: 16px;
 }
 
 .floatingLabelError {
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }
 
 /* ========== Input Wrapper ========== */

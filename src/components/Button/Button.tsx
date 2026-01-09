@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { useSquishy } from '../../motion/useSquishy';
 import { useHover } from '../../motion/useHover';
+import { useButtonGroup } from '../ButtonGroup';
 import styles from './Button.module.css';
 
 export type ButtonVariant = 'solid' | 'soft' | 'outline' | 'ghost';
@@ -76,15 +77,15 @@ export interface ButtonProps {
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     (
         {
-            variant = 'solid',
-            size = 'md',
-            color = 'primary',
+            variant: variantProp,
+            size: sizeProp,
+            color: colorProp,
             isLoading = false,
             leftIcon,
             rightIcon,
             fullWidth = false,
             pill = false,
-            disabled,
+            disabled: disabledProp,
             type = 'button',
             className,
             onClick,
@@ -92,6 +93,15 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         },
         ref
     ) => {
+        // Get context from ButtonGroup (if wrapped)
+        const group = useButtonGroup();
+
+        // Merge group props with local props (local takes precedence)
+        const variant = variantProp ?? group?.variant ?? 'solid';
+        const size = sizeProp ?? group?.size ?? 'md';
+        const color = colorProp ?? group?.color ?? 'primary';
+        const disabled = disabledProp ?? group?.isDisabled ?? false;
+
         const isDisabled = disabled || isLoading;
 
         const { scale: pressScale, handlers: pressHandlers } = useSquishy({

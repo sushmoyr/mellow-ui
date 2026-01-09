@@ -84,7 +84,8 @@
 /* Soft */
 .variant-soft.color-primary {
     background: rgba(179, 153, 255, 0.15);
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
 }
 
 .variant-soft.color-primary:hover:not(:disabled) {
@@ -93,17 +94,20 @@
 
 .variant-soft.color-secondary {
     background: rgba(255, 217, 179, 0.2);
-    color: #99816B;
+    color: #6B5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-soft.color-accent {
     background: rgba(255, 175, 153, 0.15);
-    color: #CC8D7A;
+    color: #8F5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-soft.color-danger {
     background: rgba(255, 153, 153, 0.15);
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }
 
 /* Outline */
@@ -114,7 +118,8 @@
 
 .variant-outline.color-primary {
     border-color: #B399FF;
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-primary:hover:not(:disabled) {
@@ -123,17 +128,20 @@
 
 .variant-outline.color-secondary {
     border-color: #FFD9B3;
-    color: #99816B;
+    color: #6B5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-accent {
     border-color: #FFAF99;
-    color: #CC8D7A;
+    color: #8F5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-outline.color-danger {
     border-color: #FF9999;
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }
 
 /* Ghost */
@@ -142,7 +150,8 @@
 }
 
 .variant-ghost.color-primary {
-    color: #815BCC;
+    color: #5C3D99;
+    /* WCAG AA compliant */
 }
 
 .variant-ghost.color-primary:hover:not(:disabled) {
@@ -150,15 +159,18 @@
 }
 
 .variant-ghost.color-secondary {
-    color: #99816B;
+    color: #6B5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-ghost.color-accent {
-    color: #CC8D7A;
+    color: #8F5A47;
+    /* WCAG AA compliant */
 }
 
 .variant-ghost.color-danger {
-    color: #CC7A7A;
+    color: #994747;
+    /* WCAG AA compliant */
 }
 
 /* ========== Icon ========== */
