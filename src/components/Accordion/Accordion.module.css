@@ -1,0 +1,95 @@
+/**
+ * MellowUI Accordion Styles
+ */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ========== Item ========== */
+
+.item {
+    background: #FFFDFB;
+    border: 1px solid rgba(107, 90, 71, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item[data-state="open"] {
+    border-color: rgba(179, 153, 255, 0.3);
+    box-shadow: 0 2px 12px rgba(179, 153, 255, 0.1);
+}
+
+.item.disabled {
+    opacity: 0.5;
+}
+
+/* ========== Trigger ========== */
+
+.trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    color: #29293D;
+    text-align: left;
+
+    transition: background-color 0.15s ease;
+}
+
+.trigger:hover:not(:disabled) {
+    background: rgba(179, 153, 255, 0.06);
+}
+
+.trigger:focus {
+    outline: none;
+    background: rgba(179, 153, 255, 0.1);
+}
+
+.trigger:disabled {
+    cursor: not-allowed;
+}
+
+.triggerText {
+    flex: 1;
+}
+
+.chevronWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+    background: rgba(179, 153, 255, 0.1);
+    border-radius: 8px;
+}
+
+.chevronIcon {
+    color: #5C3D99;
+}
+
+/* ========== Content ========== */
+
+.content {
+    overflow: hidden;
+}
+
+.contentInner {
+    padding: 0 20px 20px;
+    color: #6B5A47;
+    font-size: 14px;
+    line-height: 1.7;
+}
