@@ -1,0 +1,143 @@
+/**
+ * MellowUI Textarea Styles
+ */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+/* ========== Label ========== */
+
+.label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    transform-origin: left center;
+    pointer-events: none;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #6B5A47;
+    transition: color 0.15s ease;
+}
+
+.focused .label {
+    color: #5C3D99;
+}
+
+.hasError .label {
+    color: #994747;
+}
+
+/* ========== Textarea ========== */
+
+.textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+
+    background: #FFFDFB;
+    border: 2px solid rgba(107, 90, 71, 0.2);
+    border-radius: 12px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #29293D;
+    line-height: 1.5;
+
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.textarea::placeholder {
+    color: rgba(107, 90, 71, 0.5);
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: #B399FF;
+    box-shadow: 0 0 0 3px rgba(179, 153, 255, 0.2);
+}
+
+.hasError .textarea {
+    border-color: #CC7A7A;
+}
+
+.hasError .textarea:focus {
+    border-color: #CC7A7A;
+    box-shadow: 0 0 0 3px rgba(204, 122, 122, 0.2);
+}
+
+.disabled .textarea {
+    cursor: not-allowed;
+}
+
+/* ========== Sizes ========== */
+
+.size-sm .label {
+    font-size: 14px;
+    top: 10px;
+    left: 12px;
+}
+
+.size-sm .textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.size-md .label {
+    font-size: 15px;
+    top: 14px;
+    left: 14px;
+}
+
+.size-md .textarea {
+    padding: 14px 14px;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.size-lg .label {
+    font-size: 16px;
+    top: 16px;
+    left: 16px;
+}
+
+.size-lg .textarea {
+    padding: 16px 16px;
+    font-size: 16px;
+    border-radius: 14px;
+}
+
+/* With floating label - add top padding */
+.container:has(.label) .textarea {
+    padding-top: 24px;
+}
+
+.size-sm:has(.label) .textarea {
+    padding-top: 20px;
+}
+
+.size-lg:has(.label) .textarea {
+    padding-top: 28px;
+}
+
+/* ========== Helper Text ========== */
+
+.helperText {
+    margin-top: 6px;
+    padding-left: 4px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    color: #6B5A47;
+}
+
+.errorText {
+    color: #994747;
+}
