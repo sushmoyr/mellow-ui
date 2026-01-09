@@ -37,40 +37,78 @@ function App() {
 
 ## 🧩 Components
 
-### ✅ Available Components
+MellowUI includes **35+ components** organized into categories:
+
+### Buttons & Interactive
 
 | Component | Description |
 |-----------|-------------|
-| **Button** | Squishy buttons with spring physics, multiple variants |
-| **IconButton** | Circular icon-only button with squishy animation |
-| **Input** | Text input with floating label animation |
+| **Button** | Squishy buttons with spring physics, 4 variants |
+| **ButtonGroup** | Group of connected buttons |
+| **IconButton** | Circular icon-only button |
+| **Toggle** | Single toggleable button |
+| **ToggleGroup** | Single/multi selection toggle group |
+| **FloatingActionButton** | FAB with icon-only and extended modes |
+
+### Forms
+
+| Component | Description |
+|-----------|-------------|
+| **Input** | Text input with floating label |
+| **Textarea** | Multi-line input with auto-resize |
 | **Checkbox** | Bouncy checkmark animation |
 | **Switch** | Toggle switch with spring physics |
-| **Card** | Content container with hover lift, subcomponents |
-| **Badge** | Status indicators with multiple colors |
+| **Radio / RadioGroup** | Radio buttons with bouncy dot |
+| **Slider** | Range input with squishy thumb |
+| **Select** | Dropdown with animated options |
 
-### 🚧 Planned Components
+### Layout
 
-**Buttons & Interactive**
-- ButtonGroup, Toggle, ToggleGroup, FloatingActionButton
+| Component | Description |
+|-----------|-------------|
+| **Stack / HStack / VStack** | Flex container with spacing |
+| **Grid / GridItem** | CSS Grid layout wrapper |
+| **Container** | Centered max-width wrapper |
+| **Divider** | Visual separator line |
+| **Spacer** | Flexible empty space |
 
-**Form Components**
-- InputGroup, InputOTP, Textarea, Radio/RadioGroup, Slider, Select, NativeSelect, Combobox, DatePicker, Calendar, Label, Field, Form
+### Feedback
 
-**Layout**
-- Stack, Container, Divider/Separator, AspectRatio, Resizable, ScrollArea, Collapsible, Accordion
+| Component | Description |
+|-----------|-------------|
+| **Toast** | Notification popups with variants |
+| **Tooltip** | Hover information |
+| **Alert** | Inline status messages |
+| **Progress** | Bar and circular loading indicators |
+| **Skeleton** | Loading placeholder with shimmer |
 
-**Feedback**
-- Toast/Sonner, Modal/Dialog, AlertDialog, Alert, Tooltip, Progress, Skeleton, Spinner, Empty
+### Navigation
 
-**Navigation**
-- Navbar, Tabs, Breadcrumb, NavLink, Pagination, Sidebar, Menubar
+| Component | Description |
+|-----------|-------------|
+| **Tabs** | Line/pills/enclosed variants |
+| **Breadcrumb** | Path-based navigation |
+| **Pagination** | Page navigation controls |
+| **Link** | Styled anchor with hover effects |
 
-**Data Display**
-- Avatar, Typography, Kbd, Table, DataTable, Chart, Carousel
+### Data Display
 
-**Overlay & Menus**
-- Popover, HoverCard, DropdownMenu, ContextMenu, Command, Sheet, Drawer
+| Component | Description |
+|-----------|-------------|
+| **Card** | Content container with hover lift |
+| **Badge** | Status indicators |
+| **Avatar / AvatarGroup** | User image with initials fallback |
+| **Table** | Data table (striped/hoverable) |
+| **List / ListItem** | Styled list with leading/trailing |
+| **Tag** | Colored labels/chips |
+| **Kbd** | Keyboard shortcut display |
+
+### 🚧 Planned
+
+- Modal/Dialog, Drawer, Popover
+- DropdownMenu, ContextMenu
+- DatePicker, Calendar
+- Accordion, Collapsible
 
 ## 🎨 Design Tokens
 
