@@ -39,3 +39,13 @@ export type { MellowScatterChartProps, ScatterChartSeries } from './charts/Scatt
 
 export { MellowComposedChart } from './charts/ComposedChart';
 export type { MellowComposedChartProps, ComposedChartSeries } from './charts/ComposedChart';
+
+// Specialized Charts
+export { MellowGaugeChart } from './charts/GaugeChart';
+export type { MellowGaugeChartProps } from './charts/GaugeChart';
+
+export { MellowFunnelChart } from './charts/FunnelChart';
+export type { MellowFunnelChartProps, FunnelChartData } from './charts/FunnelChart';
+
+export { MellowTreemapChart } from './charts/TreemapChart';
+export type { MellowTreemapChartProps, TreemapNode } from './charts/TreemapChart';

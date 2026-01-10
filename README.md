@@ -140,9 +140,9 @@ MellowUI includes **45+ components** organized into categories:
 | **RadarChart** | Multi-axis comparison ("spider" chart) | ✅ |
 | **ScatterChart** | Point distribution, bubble variant | ✅ |
 | **ComposedChart** | Mix of line/bar/area in single chart | ✅ |
-| **GaugeChart** | KPI/progress indicator (semicircular) | 🚧 |
-| **FunnelChart** | Conversion/process flow visualization | 🚧 |
-| **TreemapChart** | Hierarchical data visualization | 🚧 |
+| **GaugeChart** | KPI/progress indicator (semicircular) | ✅ |
+| **FunnelChart** | Conversion/process flow visualization | ✅ |
+| **TreemapChart** | Hierarchical data visualization | ✅ |
 
 #### Chart Usage
 

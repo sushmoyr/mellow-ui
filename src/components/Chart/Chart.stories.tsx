@@ -194,3 +194,55 @@ export const LoadingState: Story = {
         </Chart>
     ),
 };
+
+// Specialized Charts
+import { MellowGaugeChart } from './charts/GaugeChart';
+import { MellowFunnelChart } from './charts/FunnelChart';
+import { MellowTreemapChart } from './charts/TreemapChart';
+
+const funnelData = [
+    { name: 'Visits', value: 5000 },
+    { name: 'Cart', value: 2500 },
+    { name: 'Checkout', value: 1200 },
+    { name: 'Purchase', value: 800 },
+];
+
+const treemapData = [
+    { name: 'Frontend', value: 400 },
+    { name: 'Backend', value: 300 },
+    { name: 'DevOps', value: 200 },
+    { name: 'Design', value: 150 },
+    { name: 'QA', value: 100 },
+];
+
+export const GaugeChartBasic: Story = {
+    render: () => (
+        <Chart title="Performance Score">
+            <MellowGaugeChart value={75} label="Score" />
+        </Chart>
+    ),
+};
+
+export const GaugeChartPercent: Story = {
+    render: () => (
+        <Chart title="Completion Rate">
+            <MellowGaugeChart value={85} max={100} showPercent label="Completed" />
+        </Chart>
+    ),
+};
+
+export const FunnelChartBasic: Story = {
+    render: () => (
+        <Chart title="Sales Funnel">
+            <MellowFunnelChart data={funnelData} height={300} />
+        </Chart>
+    ),
+};
+
+export const TreemapChartBasic: Story = {
+    render: () => (
+        <Chart title="Team Allocation">
+            <MellowTreemapChart data={treemapData} height={300} />
+        </Chart>
+    ),
+};
