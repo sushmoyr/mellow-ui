@@ -64,3 +64,6 @@ export * from './Drawer';
 export * from './Popover';
 export * from './DropdownMenu';
 export * from './ContextMenu';
+
+// Data Visualization
+export * from './Chart';

@@ -129,6 +129,41 @@ MellowUI includes **45+ components** organized into categories:
 | **DropdownMenu** | Action menu with icons & shortcuts |
 | **ContextMenu** | Right-click triggered menu |
 
+### Data Visualization
+
+| Component | Description | Status |
+|-----------|-------------|--------|
+| **LineChart** | Smooth curves, multi-series, gradient | ✅ |
+| **AreaChart** | Gradient fills, stacking support | ✅ |
+| **BarChart** | Rounded corners, horizontal/vertical, colorful | ✅ |
+| **PieChart** | Donut variant, active shape animation | ✅ |
+| **RadarChart** | Multi-axis comparison ("spider" chart) | ✅ |
+| **ScatterChart** | Point distribution, bubble variant | ✅ |
+| **ComposedChart** | Mix of line/bar/area in single chart | ✅ |
+| **GaugeChart** | KPI/progress indicator (semicircular) | 🚧 |
+| **FunnelChart** | Conversion/process flow visualization | 🚧 |
+| **TreemapChart** | Hierarchical data visualization | 🚧 |
+
+#### Chart Usage
+
+```tsx
+import { Chart, MellowLineChart, MellowBarChart } from '@mellow-ui/react';
+
+// Simple usage
+<Chart title="Monthly Revenue">
+  <MellowLineChart data={data} xKey="month" yKey="revenue" />
+</Chart>
+
+// Multi-series bar chart
+<Chart title="Revenue vs Cost">
+  <MellowBarChart 
+    data={data} 
+    xKey="month" 
+    yKey={['revenue', 'cost']} 
+  />
+</Chart>
+```
+
 ## 🎨 Design Tokens
 
 Access design tokens directly:

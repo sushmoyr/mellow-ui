@@ -1,0 +1,161 @@
+/**
+ * MellowUI Chart Styles
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ========== Header ========== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #29293D;
+}
+
+.description {
+  margin: 0;
+  font-size: 14px;
+  color: #6C6C91;
+}
+
+/* ========== Chart Area ========== */
+
+.chartArea {
+  position: relative;
+  width: 100%;
+}
+
+/* ========== Loading State ========== */
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 300px;
+  color: #6C6C91;
+  font-size: 14px;
+}
+
+.loadingSpinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #E5E7EB;
+  border-top-color: #B399FF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Empty State ========== */
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 300px;
+  color: #8B8BA8;
+  font-size: 14px;
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.5;
+}
+
+/* ========== Tooltip ========== */
+
+.tooltip {
+  background: white;
+  border: 1px solid #FFECD9;
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  font-size: 13px;
+}
+
+.tooltipLabel {
+  font-weight: 600;
+  color: #29293D;
+  margin-bottom: 8px;
+}
+
+.tooltipItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.tooltipName {
+  color: #6C6C91;
+  flex: 1;
+}
+
+.tooltipValue {
+  font-weight: 500;
+  color: #29293D;
+}
+
+/* ========== Legend ========== */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6C6C91;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.legendItem:hover {
+  opacity: 0.7;
+}
+
+.legendItem.inactive {
+  opacity: 0.4;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
