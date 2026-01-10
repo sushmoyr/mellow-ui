@@ -31,3 +31,5 @@ coverage/
 
 # Debug files
 debug-storybook.log
+
+.claude/

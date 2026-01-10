@@ -28,9 +28,12 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
+    "test:run": "vitest run",
     "test:ui": "vitest --ui",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run test:run && npm run build:lib",
+    "release": "npm run prepublishOnly && npm publish --access public"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -82,8 +85,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/mellow-ui.git"
+    "url": "https://github.com/sushmoyr/mellow-ui.git"
   },
+  "bugs": {
+    "url": "https://github.com/sushmoyr/mellow-ui/issues"
+  },
+  "homepage": "https://github.com/sushmoyr/mellow-ui#readme",
   "license": "MIT",
   "author": "MellowUI Team"
 }

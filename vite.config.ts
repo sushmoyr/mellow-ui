@@ -12,9 +12,8 @@ export default defineConfig(({ mode }) => {
             react(),
             isLib && dts({
                 include: ['src'],
-                exclude: ['src/**/*.stories.tsx', 'src/**/*.test.tsx'],
+                exclude: ['src/**/*.stories.tsx', 'src/**/*.test.tsx', 'src/test/**'],
                 outDir: 'dist',
-                rollupTypes: true,
             }),
         ].filter(Boolean),
         resolve: {
