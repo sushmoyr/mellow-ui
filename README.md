@@ -1,8 +1,8 @@
-# MellowUI
+# MelloUI
 
 A React component library built for **Atmosphere** — soft, squishy, delightful interfaces.
 
-> While most UI libraries are built for Enterprise Density, MellowUI is built for creative apps, personal portfolios, music tools, and wellness platforms.
+> While most UI libraries are built for Enterprise Density, MelloUI is built for creative apps, personal portfolios, music tools, and wellness platforms.
 
 ## ✨ Features
 
@@ -15,29 +15,29 @@ A React component library built for **Atmosphere** — soft, squishy, delightful
 ## 📦 Installation
 
 ```bash
-npm install @mellow-ui/react framer-motion
+npm install @mello-ui/react framer-motion
 ```
 
 ## 🚀 Quick Start
 
 ```tsx
-import { MellowProvider, Button } from '@mellow-ui/react';
-import '@mellow-ui/react/styles.css';
+import { MelloProvider, Button } from '@mello-ui/react';
+import '@mello-ui/react/styles.css';
 
 function App() {
   return (
-    <MellowProvider>
+    <MelloProvider>
       <Button variant="solid" color="primary">
         Hello Mellow! ✨
       </Button>
-    </MellowProvider>
+    </MelloProvider>
   );
 }
 ```
 
 ## 🧩 Components
 
-MellowUI includes **45+ components** organized into categories:
+MelloUI includes **45+ components** organized into categories:
 
 ### Buttons & Interactive
 

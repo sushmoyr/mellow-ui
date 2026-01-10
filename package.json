@@ -1,5 +1,5 @@
 {
-  "name": "@mellow-ui/react",
+  "name": "@mello-ui/react",
   "version": "0.1.0",
   "description": "A React component library built for Atmosphere — soft, squishy, delightful interfaces",
   "type": "module",
@@ -80,7 +80,8 @@
     "design-system",
     "animation",
     "framer-motion",
-    "mellow",
+    "mello",
+    "mello-ui",
     "atmosphere"
   ],
   "repository": {
@@ -92,5 +93,5 @@
   },
   "homepage": "https://github.com/sushmoyr/mellow-ui#readme",
   "license": "MIT",
-  "author": "MellowUI Team"
+  "author": "MelloUI Team"
 }
