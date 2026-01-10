@@ -217,32 +217,37 @@ const treemapData = [
 
 export const GaugeChartBasic: Story = {
     render: () => (
-        <Chart title="Performance Score">
+        <div>
+            <h3 style={{ fontFamily: 'Inter, sans-serif', color: '#29293D', marginBottom: 16 }}>Performance Score</h3>
             <MellowGaugeChart value={75} label="Score" />
-        </Chart>
+        </div>
     ),
 };
 
 export const GaugeChartPercent: Story = {
     render: () => (
-        <Chart title="Completion Rate">
+        <div>
+            <h3 style={{ fontFamily: 'Inter, sans-serif', color: '#29293D', marginBottom: 16 }}>Completion Rate</h3>
             <MellowGaugeChart value={85} max={100} showPercent label="Completed" />
-        </Chart>
+        </div>
     ),
 };
 
 export const FunnelChartBasic: Story = {
     render: () => (
-        <Chart title="Sales Funnel">
+        <div>
+            <h3 style={{ fontFamily: 'Inter, sans-serif', color: '#29293D', marginBottom: 16 }}>Sales Funnel</h3>
             <MellowFunnelChart data={funnelData} height={300} />
-        </Chart>
+        </div>
     ),
 };
 
 export const TreemapChartBasic: Story = {
     render: () => (
-        <Chart title="Team Allocation">
+        <div>
+            <h3 style={{ fontFamily: 'Inter, sans-serif', color: '#29293D', marginBottom: 16 }}>Team Allocation</h3>
             <MellowTreemapChart data={treemapData} height={300} />
-        </Chart>
+        </div>
     ),
 };
+
